@@ -1,5 +1,5 @@
 # coding:utf-8
-tuple_1=(i for i in range(1,4))
+tuple_1 = (i for i in range(1, 4))
 # 结果是一个生成器对象
 print(tuple_1)
 

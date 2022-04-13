@@ -13,7 +13,7 @@ https://blog.csdn.net/Python_cresss/article/details/103888771
 因此,除非特定场景需要,应避免使用以下划线开头的标识符。
 '''
 
-my_name_1='我就住在江边路'
+my_name_1 = '我就住在江边路'
 print(my_name_1)
 
 '''

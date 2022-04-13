@@ -11,6 +11,7 @@ https://www.jianshu.com/p/ed8ec8ec20b8
 6.python特殊 is,nonlocal,del,global,with,as,yield,assert
 """
 import keyword
+
 print(keyword.kwlist)
-true='真'
+true = '真'
 # True='真'

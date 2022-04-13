@@ -18,7 +18,7 @@ print(min(list_2))
 print(list_2.count('o'))
 print(list_2.index('o'))
 
-list_4=[10,20,30]
+list_4 = [10, 20, 30]
 print(list_4)
 # 删除列表
 del list_4

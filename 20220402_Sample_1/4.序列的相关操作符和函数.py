@@ -1,5 +1,5 @@
 # coding:utf-8
-value_1='helloworld'
+value_1 = 'helloworld'
 
 print('e' in value_1)
 print('v' in value_1)
