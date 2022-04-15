@@ -16,22 +16,22 @@ print(f'{value_1}{value_2}')
 print('{0}{1}'.format(value_1, value_2))
 
 # 字符串的去重
-value_3='awrisfhaeuhsajfhwiwqapofqwb'
+value_3 = 'awrisfhaeuhsajfhwiwqapofqwb'
 # 1.字符串的拼接及not in
-value_4=''
+value_4 = ''
 for i in value_3:
     if i not in value_4:
-        value_4+=i
+        value_4 += i
 print(value_4)
 # 2.使用索引及not in
-value_4=''
+value_4 = ''
 for i in range(len(value_3)):
     if value_3[i] not in value_4:
-        value_4+=value_3[i]
+        value_4 += value_3[i]
 print(value_4)
 # 3.通过集合去重+列表的排序
-value_4=set(value_3)
-list_1=list(value_4)
+value_4 = set(value_3)
+list_1 = list(value_4)
 # 排序的关键字
 list_1.sort(key=value_3.index)
 print(''.join(list_1))
