@@ -36,3 +36,17 @@ dict_1 = {'name': 'zhc', 'age': 18, 'height': 178}
 # fun_2(dict_1)
 # 调用时参数前加两个星(*),会将字典进行解包
 fun_2(**dict_1)
+
+
+# 从*之后的参数,在函数调用时,只能采用关键字参数传递
+# *称为关键字传参
+def fun_3(a, b, *, c, d):
+    print('a=', a)
+    print('b=', b)
+    print('c=', c)
+    print('d=', d)
+
+
+# TypeError: fun_3() takes 2 positional arguments but 4 were given
+# fun_3(10,20,30,40)
+fun_3(10, 20, c=30, d=40)
