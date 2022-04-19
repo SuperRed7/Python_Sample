@@ -1,0 +1,10 @@
+# coding:utf-8
+import re
+
+# 使用正则表达式提取出所有的图片链接地址
+value_1 = '<div class="ToolbarGiftArea-GiftBox"><div class="GiftItem"><div class="GiftItem-slide" data-giftid="20005"><img src="https://gfs-op.douyucdn.cn/dygift/2018/11/27/9baacf971571e9686974ae032bf0bcd9.png?x-oss-process=image/format,webp/quality,q_75" class="GiftItem-img"></div></div><div class="GiftItem"><div class="GiftItem-slide" data-giftid="20004"><img src="https://gfs-op.douyucdn.cn/dygift/2019/02/18/1570a13cde6f10d9c8150825566cf5cf.png?x-oss-process=image/format,webp/quality,q_75" class="GiftItem-img"></div></div><div class="GiftItem"><div class="GiftItem-slide" data-giftid="20003"><img src="https://gfs-op.douyucdn.cn/dygift/2018/11/27/8334562a2f26a0a08a9ab0db82876d9c.png?x-oss-process=image/format,webp/quality,q_75" class="GiftItem-img"><div class="GiftItem-leftConnerMark bg4">冠</div></div></div><div class="GiftItem"><div class="GiftItem-slide" data-giftid="20002"><img src="https://gfs-op.douyucdn.cn/dygift/2018/11/27/d7e44232411c7a0d7573940d96e75050.png?x-oss-process=image/format,webp/quality,q_75" class="GiftItem-img"></div></div><div class="GiftItem"><div class="GiftItem-slide" data-giftid="21909"><img src="https://gfs-op.douyucdn.cn/dygift/2021/12/27/7fbb7c4a262b90d5d39b95452294c16a.png?x-oss-process=image/format,webp/quality,q_75" class="GiftItem-img"><div class="GiftItem-leftConnerMark bg3">趣</div></div></div><div class="GiftItem"><div class="GiftItem-slide" data-giftid="21985"><img src="https://gfs-op.douyucdn.cn/dygift/2022/02/23/39a4a3733aa432096292fa7092db90a7.png?x-oss-process=image/format,webp/quality,q_75" class="GiftItem-img"><div class="GiftItem-leftConnerMark bg2">趣</div></div></div><div class="GiftItem"><div class="GiftItem-slide" data-giftid="20541"><img src="https://gfs-op.douyucdn.cn/dygift/2019/08/23/56d5c2837cd6b6f0425b8757e5d8cab1.png?x-oss-process=image/format,webp/quality,q_75" class="GiftItem-img"></div></div></div>'
+# print(value_1)
+pattern = 'https://gfs-op.douyucdn.cn/dygift/201\d{1}/\d{2}/\d{2}/\w*.png\?x-oss-process=image/format,webp/quality,q_75'
+list_1 = re.findall(pattern, value_1)
+for i in list_1:
+    print(i)
